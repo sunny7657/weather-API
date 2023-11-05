@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <form class="js-search">
+      <div class="js-form-container">
+        <input type="text" name="country" />
+      </div>
+      <button class="js-search-btn btn" type="button">Find country</button>
+      <button class="js-add-btn btn" type="button">Add country</button>
+      <button class="js-remove-btn btn" type="button">Remove country</button>
+    </form>
+
+    <ul class="js-list"></ul>
   </body>
 </html>
